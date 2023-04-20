@@ -1,0 +1,20 @@
+/*悬停显示徽标提示语*/
+a.github-badge:hover:before {
+    position: fixed;
+    width: fit-content;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 100;
+    content: attr(data-title);
+    font-size: 5px;
+    color: #fff;
+    padding: 2px;
+    background-color: var(--text-bg-hover);
+}
+[data-theme=dark] a.github-badge:hover:before {
+    background-color: rgba(18,18,18,0.8);
+}
