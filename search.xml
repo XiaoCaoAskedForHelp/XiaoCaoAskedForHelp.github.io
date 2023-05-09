@@ -4,6 +4,139 @@
   
     
     <entry>
+      <title>主板知识</title>
+      <link href="/2023/05/09/%E4%B8%BB%E6%9D%BF%E7%9F%A5%E8%AF%86/"/>
+      <url>/2023/05/09/%E4%B8%BB%E6%9D%BF%E7%9F%A5%E8%AF%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是主板"><a href="#什么是主板" class="headerlink" title="什么是主板"></a>什么是主板</h2><p>主板就是电脑的骨骼，用来承载和连接各种电脑配件的配件。同时，也是处理器的家。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> computer </tag>
+            
+            <tag> mainboard </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>固态硬盘的选择</title>
+      <link href="/2023/04/28/%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%E7%9A%84%E9%80%89%E6%8B%A9/"/>
+      <url>/2023/04/28/%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%E7%9A%84%E9%80%89%E6%8B%A9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h2><p>现在 M.2 接口就逐渐成为固态硬盘接口的主流</p><p>SATA 接口的固态硬盘大部分被设计成和机械硬盘通用尺寸和接口，拆下来之后你就会发现，其实真正储存和电路部分只有一小块，剩下的都是空的</p><p>SATA 接口和走 SATA/AHCI 协议的接口速度上限被限定在 700MB/S 左右，所以新的固态硬盘都会选择使用 M.2 接口或者直接插 PCIe 槽。</p><p>购买 NVMe、M.2 接口 固态硬盘或者把它们装到电脑主板上时，通常都会看到类似于 22XX 4 个数字的参数，这个就表示固态硬盘的尺寸。</p><p>22=22mm，也就是固态硬盘宽度是 2.2 厘米的意思，后面两个数字就是固态硬盘的长度，通常会有 20，42，60，80 等常见长度，以毫米为单位。我们购买的时候一定要先看看自己设备上的 M.2 接口预留出了多少空间，免得太长放不进去。</p><h2 id="接口、协议"><a href="#接口、协议" class="headerlink" title="接口、协议"></a>接口、协议</h2><p>民用储存设备常见到的总线有 SATA 总线、PCIe 总线和企业级 SAS 总线（如果你用一些服务器主板的话，可能会有）</p><p>SATA 总线一般是给机械硬盘使用，而且速度上限比较低，而 SAS 总线又是企业级使用比较多，那么低速的固态硬盘走 SATA 总线，现代的 NVMe 固态硬盘一般都是走 PCIe 总线了。</p><p>和简单的总线协议不同，固态硬盘接口方面可就复杂多了。最基础的就是我们常见的 SATA 接口，还有为了笔记本等便携式设备引申出来的 mSATA 接口，还有固态硬盘专享的 M.2（NGFF） 接口，SATA Express（SATAe） 接口，PCIe 接口，甚至还有不常见的走 SAS 总线的 SAS 接口与 U.2，AIC 接口等等</p><h2 id="M-2（NGFF）-PCIe-接口固态硬盘"><a href="#M-2（NGFF）-PCIe-接口固态硬盘" class="headerlink" title="M.2（NGFF） /PCIe 接口固态硬盘"></a>M.2（NGFF） /PCIe 接口固态硬盘</h2><p>M.2 接口： 专门用于固态硬盘，并且可以与速度最快的 PCIe 总线交流的接口</p><p>作为现在和未来的主流接口，自然有向后兼容，既可以使用 SATA 协议也可以使用 NVMe 协议，由于支持协议众多并且接口复杂，M.2 接口通过接口上的缺口来确定协议类型，由于不同缺口像钥匙那样，所以叫做 KEY，M.2 接口有从 ABCDEFGHJKLM 这么多种 KEY，KEY 对不上是插不进去对应接口的</p><p>我们日常只能看到两种：M KEY 和 B KEY。</p><p>既然 M.2 接口的高速固态硬盘使用的是 NVMe 协议走 PCIe 总线，有些厂商干脆就把固态硬盘做成 PCIe 接口，插到 PCIe 插槽插使用。这就是 PCIe 固态硬盘，用的一般也是 NVMe 协议。</p><h3 id="电脑主板简单示意图"><a href="#电脑主板简单示意图" class="headerlink" title="电脑主板简单示意图"></a>电脑主板简单示意图</h3><p><img src="/images/computer/电脑简单示意图.png" alt="电脑主板简单示意图" style="width: 50%;"/></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> computer </tag>
+            
+            <tag> solid state drives(SSD) </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>内存的选择</title>
+      <link href="/2023/04/28/%E5%86%85%E5%AD%98%E7%9A%84%E9%80%89%E6%8B%A9/"/>
+      <url>/2023/04/28/%E5%86%85%E5%AD%98%E7%9A%84%E9%80%89%E6%8B%A9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="推荐品牌"><a href="#推荐品牌" class="headerlink" title="推荐品牌"></a>推荐品牌</h2><p>金士頓(Kingston)、威刚(ADATA)、三星（SAMSUNG）、芝奇(G.SKILL)、海盗船(Corsair)、十铨(Team)、镁光(Micron Crucial)、科赋(KLEVV)、阿斯加特（Asgard）、光威（gloway）、影驰、长鑫颗粒等</p><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p>内存分ROM(只读存储器)和RAM(随机存储器、内存条也是RAM)两部分，RAM可以理解为主存，ROM只是很小一部分，比如记录BIOS信息的ROM。</p><p>ROM是在主板上的电池旁边的一块写着BIOS的芯片。</p><p>在个人电脑中，SRAM 常常以芯片的形式出现，被嵌入到主板、显卡或其他扩展卡中。</p><p>内存条是DRAM。</p><h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><p>所谓几代只得内存条的类型，名字叫做Double Data Rate双倍速率同步动态随机存储器。简称为DDR几 目前最高是DDR5 也就是五代内存。</p><p>目前主流的就是第四代DDR4，不同代的内存条，接口是不一样的，不同世代内存条和互不兼容。国际惯例DDR4技术优于DDR3和DDR2，同时DDR3和DDR2已经落伍淘汰，DDR4是目前的存量市场主流，DDR5也已经全面上市了，频率更高，目前正处于第四代和第五代更替的时间节点，DDR5未来1到3年会成为主流。另外笔记本内存的外形要比台式机的内存短一些，来配合笔记本电脑更小的空间。</p><p>从性能上来讲，代数越高 一般频率也越高，性能自然也越高。</p><h2 id="内存容量"><a href="#内存容量" class="headerlink" title="内存容量"></a>内存容量</h2><p>16G对于绝大多数人都是足够的，除非是要吃内存的专业软件需要才考虑选择32G及以上的内存大小，购买时注意购买2根组成双通道，同等条件下双通道效能大于单通道。</p><h3 id="内存双通道相关知识"><a href="#内存双通道相关知识" class="headerlink" title="内存双通道相关知识"></a>内存双通道相关知识</h3><p>一般来讲，DDR4内存都要组内存双通道，DDR4内存组双通道可以内存带宽，从而提升性能，两根8G的DDR4内存的性能大于一跟16G的DDR4内存。</p><p>内存带宽 = 内存核心频率 X 内存总线位宽 X 倍增系数</p><p>其中内存总线位宽就是要说的内存双通道。当你只有一根内存的时候，数据都保存在这根内存条中，cpu也只能和这一根内存做数据交互。当你有两根时候，组成双通道，此时，你运行的数据被拆分了两部分分别在两根内存条中，cpu可以同时访问两根内存条。</p><p>但DDR5单条就是双通道了。插入两条8G的DDR5内存条，与一条16G的DDR5内存条的性能差距很小，几乎可以忽略不计。</p><p>但如果追求极致性能，两条DDR5内存条的带宽也会翻倍。不过由于DDR5单条的带宽已经很高，再拓展一倍，也不会有明显使用体验上提升。就好比原本是四车道，拓展到八车道后堵车减少，性能提升明显。但如果本来就是八车道，再拓展到十六车道也不会有太大改变。</p><h2 id="内存频率"><a href="#内存频率" class="headerlink" title="内存频率"></a>内存频率</h2><p>内存都会标注频率，2666MHz、3200MHz、3600MHz、4800MHz、5600MHz、6000MHz等，根据需求选。（注：购买高频内存需要进bios开启xmp，不然D4默频2666MHz运行，D5默认4800MHz运行）</p><p>注意看CPU和主板是否支持才行。</p><h3 id="内存颗粒"><a href="#内存颗粒" class="headerlink" title="内存颗粒"></a>内存颗粒</h3><p>内存颗粒极大的影响着内存频率超频体验</p><p><strong>内存颗粒就是DRAM芯片</strong>，内存颗粒就是内存用来存储数据的中转仓库，不过它不像硬盘，它属于易失性存储（临时存储），只要断电之后，存放在内存中的所有的数据就会消失。</p><h2 id="内存的时序"><a href="#内存的时序" class="headerlink" title="内存的时序"></a>内存的时序</h2><p>内存的时序一般就是指延迟，所以越低越好，一般用户无需太关心。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol><li>选择销量好的主流品牌，一般主流品牌内存产品都提供终身质保，主流品牌更可靠，且兼容性相对更好。</li><li>一般用户选购内存，只需看品牌、世代、容量、频率即可，超频玩家可以深入研究内存颗粒、时序等。</li></ol><h3 id="内存理论参考"><a href="#内存理论参考" class="headerlink" title="内存理论参考"></a>内存理论参考</h3><ol><li><a href="https://www.cnblogs.com/guanghe/p/12517637.html">内存基础知识</a> 讲的比较清晰</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hardware </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hardware </tag>
+            
+            <tag> memory </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机械硬盘的选择</title>
+      <link href="/2023/04/27/%E6%9C%BA%E6%A2%B0%E7%A1%AC%E7%9B%98%E7%9A%84%E9%80%89%E6%8B%A9/"/>
+      <url>/2023/04/27/%E6%9C%BA%E6%A2%B0%E7%A1%AC%E7%9B%98%E7%9A%84%E9%80%89%E6%8B%A9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是机械硬盘？"><a href="#什么是机械硬盘？" class="headerlink" title="什么是机械硬盘？"></a>什么是机械硬盘？</h2><p>机械硬盘简称HDD指的就是传统普通硬盘，主要有：盘片，磁头，盘片转轴及控制电机，磁头控制器，数据转换器，接口，缓存等几个部分组成。工作时靠磁头悬浮在高速旋转的碟片上进行读写数据。机械硬盘输入集精密机械、微电子电路、电磁转换为一体的存储设备。</p><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>容量：机械硬盘可提供巨大存储空间，2TB在固态硬盘中堪称大容量，在机械硬盘中几乎只是入门</p><p>容量单价：机械硬盘容量单价远低于固态硬盘，同容量机械硬盘价格远低于固态硬盘（2TB及以上）</p><p>转速：机械硬盘工作时靠磁头悬浮在高速旋转的碟片上进行读写数据，而碟片依靠主轴马达来转动。一般硬盘转速5400-7200。</p><p>缓存：硬盘与外部交换数据的临时场所。硬盘读/写数据时，缓存就像一个中转仓库一样，不断地写入数据、清空再写入数据。目前大多数硬盘缓存有64MB、128M、256M。这个参数在以前话我们说越大越好，现在似乎不是太重要，现在这个缓存增大，是由于硬盘容量的增大，硬盘厂商采用了叠瓦的形式来写入数据。需要更多的临时交替数据，不增大缓存不行。</p><p>接口：最主流的接口就是SATA接口了，另外一个就是SAS接口。现在更强的是NVME协议。</p><blockquote><p>SATA是“Serial ATA”的缩写，通俗的说就是串行数据传输接口，是硬盘如今主流的接口，SATA接口仅用四支针脚就能完成所有的工作，分别用于连接电缆、连接地线、发送数据和接收数据，同时这样的架构还能降低系统能耗和减小系统复杂性。</p><p>现在一般用的接口是SATA 3.0接口，相比1.0和2.0，它有更快的传输上限，使用SATA 3.0接口传输速度可以达到6Gbps(750MB/s)，不过这只是理论速度。</p><p>事实上SATA接口发送信息的速度为600MB/s，受制于系统各部件的影响，实际速度会更低一些，而且不同环境差异会很大。 </p><p>所以在网上购买硬盘时总会看见6Gbps这个数值，这个就是硬盘的接口速率，不过单个机械硬盘是达不到这个速度的，所以才会有固态或者磁盘阵列。</p></blockquote><div class="table-container"><table><thead><tr><th>版本</th><th>带宽</th><th>实际速度</th></tr></thead><tbody><tr><td>SATA1.0</td><td>1.5Gb/s</td><td>150MB/s</td></tr><tr><td>SATA2.0</td><td>3Gb/s</td><td>300MB/s</td></tr><tr><td>SATA3.0</td><td>6Gb/s</td><td>600MB/s</td></tr></tbody></table></div><h2 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h2><h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><p>笔记本硬盘（2.5寸）和台式机硬盘（3.5寸）</p><p>机械硬盘可按照尺寸分为笔记本硬盘和台式机硬盘两类，前者磁碟直径为2.5英寸、厚度一般为7mm或9mm，后者磁碟直径为3.5英寸、厚度一般为26mm，于是同转速下台式机硬盘中磁头扫过的磁区更多，台式机的连续读写速度因此更快。</p><p>笔记本硬盘（2.5寸）体积小巧、转速较低（常见5400转），可以用于笔记本和itx机箱，它们相比台式机硬盘（3.5寸）噪音一般更小、发热更少，但是市售1TB及以上的硬盘（包括移动硬盘）均为叠瓦盘。</p><p>台式机硬盘（3.5寸）体型壮硕如板砖，转速高（常见7200转）、噪音大、发热稍大一点，多块硬盘堆积使用需要注意散热。</p><p>CMR和SMR区别：因为CMR和SMR的性能差距大，CMR相对于SMR来说，是更好的性能卖点，厂家会在显眼的地方说明使用的是CMR。对于SMR，不是好技术，厂家通常决口不谈，如果你翻遍了硬盘的介绍页面，也没有看到出现CMR的字样，那么这个硬盘99%的可能性，是使用SMR技术的叠瓦盘。</p><h3 id="品牌"><a href="#品牌" class="headerlink" title="品牌"></a>品牌</h3><p>机械硬盘常见的品牌有西部数据(WD)、希捷（ST）等。</p><p>1、西数有绿盘、蓝盘、紫盘、红盘、黑盘、企业盘几个系列</p><ul><li>绿盘：价格便宜，噪音小、发热低,性能一般，适用于家用办公。不过绿盘很少见了，一般都被蓝盘代替了。</li><li>蓝盘：价格适中，定位民用，一般用于家用、办公电脑、最好不要7*24小时运转。</li><li>紫盘：价格适中，能够减少在安全系统使用中发生的像素错误和视频中断次数，兼容各种安全系统。主要用于监控安防。</li><li>黑盘：价格贵，定位高端，其性能强悍。一般用于企业、网吧等要求吞吐量大的服务器上。</li><li>红盘：容错率高，兼容性好，质量和蓝盘、绿盘差不多。一般用于NAS存储，弄几块红盘做raid阵列来存储公司或企业资料。</li><li>企业盘:性能和黑盘相比速度差不多，稳定性要好于黑盘。一般用于企业服务器。</li></ul><p>2、希捷(ST)有酷鱼、酷鹰、酷狼、银河企业等系列。</p><ul><li>酷鱼系列：速度还行，用于日常办公。</li><li>酷鹰系列：希捷通过与海康威视、大华等安防企业进行了技术合作，研发了这个系列主要用于监控安防领域。</li><li>酷狼系列：性能和响应时间好于普通硬盘，稳定性好，耐用，可扩展强。用于NAS存储。</li><li>银河企业系列:稳定性好，速度快，一般用于企业公司服务器或网吧服务器。</li></ul><h2 id="硬盘阵列"><a href="#硬盘阵列" class="headerlink" title="硬盘阵列"></a>硬盘阵列</h2><p>硬盘组磁盘阵列后除raid0阵列外往往容量有所损耗：</p><ul><li>Raid0：硬盘总数*每块硬盘容量</li><li>Raid1：镜像备份模式，硬盘容量减半</li><li>Raid5：1块数据校验盘，硬盘容量为（硬盘总数-1）*每块硬盘容量</li><li>Raid6： 2块数据校验盘，硬盘容量为（硬盘总数-2）*每块硬盘容量</li><li>Raid10：0.5<em>硬盘总数</em>每块硬盘容量</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> computer </tag>
+            
+            <tag> hard disk drive(HHD) </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux查看系统资源的命令</title>
+      <link href="/2023/04/20/Linux%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/04/20/Linux%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%9A%84%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Linux-查看系统资源的命令"><a href="#Linux-查看系统资源的命令" class="headerlink" title="Linux 查看系统资源的命令"></a>Linux 查看系统资源的命令</h2><h3 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h3><h4 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h4><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">命令 参数</span><br><span class="line">d：指定更新的间隔，以秒计算。</span><br><span class="line">q：没有任何延迟的更新。如果使用者有超级用户，则top命令将会以最高的优先序执行。</span><br><span class="line">c：显示进程完整的路径与名称。</span><br><span class="line">S：累积模式，会将己完成或消失的子行程的CPU时间累积起来。</span><br><span class="line">s：安全模式。</span><br><span class="line">i：不显示任何闲置(Idle)或无用(Zombie)的行程。</span><br><span class="line">n：显示更新的次数，完成后将会退出top。</span><br></pre></td></tr></table></figure><p>显示说明：<br><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">top - 05:32:00 up 16:01,  3 users,  load average: 0.00, 0.00, 0.00</span><br><span class="line">Tasks: 219 total,   1 running, 218 sleeping,   0 stopped,   0 zombie</span><br><span class="line">%Cpu(s):  0.2 us,  0.1 sy,  0.0 ni, 99.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st    #### cpu信息</span><br><span class="line">MiB Mem :   3931.3 total,   2960.7 free,    245.0 used,    725.5 buff/cache        #### 内存信息</span><br><span class="line">MiB Swap:   3931.0 total,   3931.0 free,      0.0 used.   3453.8 avail Mem         #### 硬盘上交换分区</span><br><span class="line"></span><br><span class="line">PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                                               </span><br><span class="line">26727 cqd       20   0    9412   4088   3256 R   0.7   0.1   0:00.13 top                                                                                                                                                   </span><br><span class="line">784 root      20   0  309464   7888   6536 S   0.3   0.2   1:23.86 vmtoolsd                                                                                                                                              </span><br><span class="line">25990 root      20   0       0      0      0 I   0.3   0.0   0:00.96 kworker/3:0-events                                                                                                                                    </span><br><span class="line">1 root      20   0  169428  12844   8480 S   0.0   0.3   0:07.67 systemd                                                                                                                                               </span><br><span class="line">2 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kthreadd</span><br><span class="line">----------------------------------------------------------------------------------------</span><br><span class="line">PID（Process ID）：进程标示号。</span><br><span class="line">USER：进程所有者的用户名。</span><br><span class="line">PR：进程的优先级别。</span><br><span class="line">NI：进程的优先级别数值。</span><br><span class="line">VIRT：进程占用的虚拟内存值。</span><br><span class="line">RES：进程占用的物理内存值。</span><br><span class="line">SHR：进程使用的共享内存值。</span><br><span class="line">S：进程的状态，其中S表示休眠，R表示正在运行，Z表示僵死状态，N表示该进程优先值是负数。</span><br><span class="line">%CPU：该进程占用的CPU使用率。</span><br><span class="line">%MEM：该进程占用的物理内存和总内存的百分比。</span><br><span class="line">TIME＋：该进程启动后占用的总的CPU时间。</span><br><span class="line">Command：进程启动的启动命令名称，如果这一行显示不下，进程会有一个完整的命令行。</span><br></pre></td></tr></table></figure></p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">top命令使用过程中，还可以使用一些交互的命令来完成其它参数的功能。这些命令是通过快捷键启动的。</span><br><span class="line">&lt;空格&gt;：立刻刷新。</span><br><span class="line">P：根据CPU使用大小进行排序。</span><br><span class="line">T：根据时间、累计时间排序。</span><br><span class="line">q：退出top命令。</span><br><span class="line">m：切换显示内存信息。</span><br><span class="line">t：切换显示进程和CPU状态信息。</span><br><span class="line">c：切换显示命令名称和完整命令行。</span><br><span class="line">M：根据使用内存大小进行排序。</span><br><span class="line">W：将当前设置写入~/.toprc文件中。这是写top配置文件的推荐方法。</span><br></pre></td></tr></table></figure><h4 id="htop-指令-top升级版"><a href="#htop-指令-top升级版" class="headerlink" title="htop 指令(top升级版)"></a>htop 指令(top升级版)</h4><p>命令格式：htop<br>用途：详细分析CPU和内存使用情况。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install htop</span><br></pre></td></tr></table></figure><br><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">第一区域：CPU、内存、Swap的使用情况；</span><br><span class="line">第二区域：任务、线程、平均负载及系统运行时间的信息。平均负载部分提供了三个数字，这仅仅表示的是过去的5分钟、10分钟和15分钟系统的平均负载而已，在单核的系统中平均负载为1表示的是百分之百的 CPU 利用率。最后，运行时间 （uptime）标示的数字是从系统启动起到当前的运行总时间。</span><br><span class="line">第三区域：当前系统中的所有进程。各列说明：</span><br><span class="line">    PID：进程标志号，是非零正整数</span><br><span class="line">    USER：进程所有者的用户名</span><br><span class="line">    PR：进程的优先级别</span><br><span class="line">    NI：进程的优先级别数值</span><br><span class="line">    VIRT：进程占用的虚拟内存值</span><br><span class="line">    RES：进程占用的物理内存值</span><br><span class="line">    SHR：进程使用的共享内存值</span><br><span class="line">    S：进程的状态，其中S表示休眠，R表示正在运行，Z表示僵死状态，N表示该进程优先值是负数</span><br><span class="line">    %CPU：该进程占用的CPU使用率</span><br><span class="line">    %MEM：该进程占用的物理内存和总内存的百分比</span><br><span class="line">    TIME+：该进程启动后占用的总的CPU时间</span><br><span class="line">    COMMAND：进程启动的启动命令名称</span><br><span class="line">第四区域：当前界面中F1-F10功能键中定义的快捷功能。即 底部菜单栏。</span><br></pre></td></tr></table></figure></p><h4 id="TIP："><a href="#TIP：" class="headerlink" title="TIP："></a>TIP：</h4><p>1）当物理内存快被耗尽时，系统并没有崩溃，而是拿 swap 做临时内存，当两者都耗尽，系统 OutofMemory</p><p>2）物理内存达到峰值，系统中一些不常用的进程内存占用被提到 swap 区</p><p>3）当 Men 区的资源进行释放时，被挪到 swap 的内存并不会全部回来，随着系统或者程序的唤醒才会慢慢回到 men 区</p><p>4）swap 是内存不够时，磁盘虚拟出来的内存，磁盘主要是 I/O 级别的操作，并不是系统内核级别的操作，处理速度跟 mem 区不是一个等级</p><h4 id="vmstat-命令"><a href="#vmstat-命令" class="headerlink" title="vmstat 命令"></a>vmstat 命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">命令参数：</span><br><span class="line">vmstat [循环等待时间] [采集次数]例如：vmstat 2 3</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cqd@cqd:~$ vmstat</span><br><span class="line">procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----</span><br><span class="line">r  b   swpd   free   buff  cache   si   so    bi    bo   <span class="keyword">in</span>   cs us sy <span class="built_in">id</span> wa st</span><br><span class="line">0  0      0 3030696 122816 620584    0    0     2     4   26   36  0  0 100  0  0</span><br></pre></td></tr></table></figure><p>命令显示：<br><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">r 表示运行队列(就是说多少个进程真的分配到CPU)，我测试的服务器目前CPU比较空闲，没什么程序在跑，当这个值超过了CPU数目，就会出现CPU瓶颈了。这个也和top的负载有关系，一般负载超过了3就比较高，超过了5就高，超过了10就不正常了，服务器的状态很危险。top的负载类似每秒的运行队列。如果运行队列过大，表示你的CPU很繁忙，一般会造成CPU使用率很高。</span><br><span class="line">b 表示阻塞的进程,这个不多说，进程阻塞，大家懂的。</span><br><span class="line">swpd 虚拟内存已使用的大小，如果大于0，表示你的机器物理内存不足了，如果不是程序内存泄露的原因，那么你该升级内存了或者把耗内存的任务迁移到其他机器。</span><br><span class="line">free   空闲的物理内存的大小，我的机器内存总共8G，剩余3415M。</span><br><span class="line">buff   Linux/Unix系统是用来存储，目录里面有什么内容，权限等的缓存，我本机大概占用300多M</span><br><span class="line">cache cache直接用来记忆我们打开的文件,给文件做缓冲，我本机大概占用300多M(这里是Linux/Unix的聪明之处，把空闲的物理内存的一部分拿来做文件和目录的缓存，是为了提高 程序执行的性能，当程序使用内存时，buffer/cached会很快地被使用。)</span><br><span class="line">si  每秒从磁盘读入虚拟内存的大小，如果这个值大于0，表示物理内存不够用或者内存泄露了，要查找耗内存进程解决掉。我的机器内存充裕，一切正常。</span><br><span class="line">so  每秒虚拟内存写入磁盘的大小，如果这个值大于0，同上。</span><br><span class="line">bi  块设备每秒接收的块数量，这里的块设备是指系统上所有的磁盘和其他块设备，默认块大小是1024byte，我本机上没什么IO操作，所以一直是0，但是我曾在处理拷贝大量数据(2-3T)的机器上看过可以达到140000/s，磁盘写入速度差不多140M每秒</span><br><span class="line">bo 块设备每秒发送的块数量，例如我们读取文件，bo就要大于0。bi和bo一般都要接近0，不然就是IO过于频繁，需要调整。</span><br><span class="line">in 每秒CPU的中断次数，包括时间中断</span><br><span class="line">cs 每秒上下文切换次数，例如我们调用系统函数，就要进行上下文切换，线程的切换，也要进程上下文切换，这个值要越小越好，太大了，要考虑调低线程或者进程的数目,例如在apache和nginx这种web服务器中，我们一般做性能测试时会进行几千并发甚至几万并发的测试，选择web服务器的进程可以由进程或者线程的峰值一直下调，压测，直到cs到一个比较小的值，这个进程和线程数就是比较合适的值了。系统调用也是，每次调用系统函数，我们的代码就会进入内核空间，导致上下文切换，这个是很耗资源，也要尽量避免频繁调用系统函数。上下文切换次数过多表示你的CPU大部分浪费在上下文切换，导致CPU干正经事的时间少了，CPU没有充分利用，是不可取的。</span><br><span class="line">us 用户CPU时间，我曾经在一个做加密解密很频繁的服务器上，可以看到us接近100,r运行队列达到80(机器在做压力测试，性能表现不佳)。</span><br><span class="line">sy 系统CPU时间，如果太高，表示系统调用时间长，例如是IO操作频繁。</span><br><span class="line">id  空闲 CPU时间，一般来说，id + us + sy = 100,一般我认为id是空闲CPU使用率，us是用户CPU使用率，sy是系统CPU使用率。</span><br><span class="line">wt 等待IO CPU时间。</span><br></pre></td></tr></table></figure></p><h3 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h3><h4 id="free-命令，-top-命令"><a href="#free-命令，-top-命令" class="headerlink" title="free 命令， top 命令"></a>free 命令， top 命令</h4><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">free 命令参数</span><br><span class="line">－b －k －m：分别以字节（KB、MB）为单位显示内存使用情况。</span><br><span class="line">－s delay：显示每隔多少秒数来显示一次内存使用情况。</span><br><span class="line">－t：显示内存总和列。</span><br><span class="line">－o：不显示缓冲区调节列。</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cqd@cqd:~$ free -m</span><br><span class="line">              total        used        free      shared  buff/cache   available</span><br><span class="line">Mem:           3931         244        2960           1         726        3454</span><br><span class="line">Swap:          3930           0        3930</span><br><span class="line">cqd@cqd:~$ free</span><br><span class="line">              total        used        free      shared  buff/cache   available</span><br><span class="line">Mem:        4025604      250280     3031352        1240      743972     3537284</span><br><span class="line">Swap:       4025340           0     4025340</span><br></pre></td></tr></table></figure><h3 id="磁盘"><a href="#磁盘" class="headerlink" title="磁盘"></a>磁盘</h3><h4 id="df-h-命令"><a href="#df-h-命令" class="headerlink" title="df -h 命令"></a>df -h 命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cqd@cqd:~$ <span class="built_in">df</span> -h</span><br><span class="line">Filesystem                         Size  Used Avail Use% Mounted on</span><br><span class="line">udev                               1.9G     0  1.9G   0% /dev</span><br><span class="line">tmpfs                              394M  1.3M  392M   1% /run</span><br><span class="line">/dev/mapper/ubuntu--vg-ubuntu--lv   24G  6.2G   17G  28% /</span><br><span class="line">tmpfs                              2.0G     0  2.0G   0% /dev/shm</span><br><span class="line">tmpfs                              5.0M     0  5.0M   0% /run/lock</span><br></pre></td></tr></table></figure><h3 id="查看其他系统资源命令"><a href="#查看其他系统资源命令" class="headerlink" title="查看其他系统资源命令"></a>查看其他系统资源命令</h3><h4 id="uptime-命令"><a href="#uptime-命令" class="headerlink" title="uptime 命令"></a>uptime 命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cqd@cqd:~$ <span class="built_in">uptime</span></span><br><span class="line">05:52:37 up 16:22,  3 <span class="built_in">users</span>,  load average: 0.00, 0.00, 0.00</span><br><span class="line"><span class="comment">#当前服务器时间：    05:52:37</span></span><br><span class="line"><span class="comment">#当前服务器运行时长  16:22 min</span></span><br><span class="line"><span class="comment">#当前用户数          3 users</span></span><br><span class="line"><span class="comment">#当前的负载均衡      load average  0.00, 0.00, 0.00，分别取1min,5min,15min的均值</span></span><br></pre></td></tr></table></figure><p>什么样的Load值得警惕（<strong>单核</strong>）？</p><p>Load &lt; 0.7时：系统很闲，马路上没什么车，要考虑多部署一些服务</p><p>0.7 &lt; Load &lt; 1时：系统状态不错，马路可以轻松应对</p><p>Load == 1时：系统马上要处理不多来了，赶紧找一下原因</p><p>Load &gt; 5时：马路已经非常繁忙了，进入马路的每辆汽车都要无法很快的运行</p><p>如果有两个CPU，则表示有两条马路，此时即使Load大于1也不代表有汽车在等待：</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>su和sudo的小知识</title>
       <link href="/2023/04/20/su%E5%92%8Csudo%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
       <url>/2023/04/20/su%E5%92%8Csudo%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/</url>
@@ -21,6 +154,8 @@
         <tags>
             
             <tag> linux </tag>
+            
+            <tag> command </tag>
             
         </tags>
       
@@ -65,14 +200,14 @@
       
       <categories>
           
-          <category> Basic Knowledge of Computer </category>
+          <category> Basic Knowledge Of Computer </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> basic Knowledge of Computer </tag>
+            <tag> basic knowledge of computer </tag>
             
         </tags>
       
