@@ -601,10 +601,6 @@ div#archive {
   max-width: 1400px;
 }
 
-.layout.hide-aside {
-  max-width: 1400px;
-}
-
 /* 侧边卡片栏宽度 */
 .aside-content {
   max-width: 318px;
@@ -617,4 +613,38 @@ div#archive {
     max-width: none !important;
     padding: 0 5px 0 5px;
   }
+}
+/*--------------------------------------*/
+/* 文章封面箭头动画 */
+.recent-post-arrow {
+  animation: ddd 3s linear infinite;
+}
+
+@keyframes ddd {
+  0% {
+    top: 30px;
+  }
+  10% {
+    top: 20px;
+  }
+  20% {
+    top: 30px;
+  }
+  30% {
+    top: 20px;
+  }
+  60% {
+    top: 22px;
+  }
+  90% {
+    top: 20px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+/* 首页文章信息彩色图标右边相隔5px */
+.post-ui-icon {
+  margin-right: 2px;
 }
