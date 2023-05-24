@@ -4,6 +4,191 @@
   
     
     <entry>
+      <title>webp相对于png和jpg有什么优势</title>
+      <link href="/2023/05/24/webp%E7%9B%B8%E5%AF%B9%E4%BA%8Epng%E5%92%8Cjpg%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF/"/>
+      <url>/2023/05/24/webp%E7%9B%B8%E5%AF%B9%E4%BA%8Epng%E5%92%8Cjpg%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF/</url>
+      
+        <content type="html"><![CDATA[<p>先放一个 WebP 转换的示例链接，可以直观感受 WebP 在图片大小上的优势。</p><p><img src="/images/software/webp对比png和jpg/直观对比感受.png" alt="直观对比感受.png"></p><p><a href="https://www.upyun.com/webp">WebP示例链接（GIF、PNG、JPG转Webp）</a></p><h2 id="webp的发展"><a href="#webp的发展" class="headerlink" title="webp的发展"></a>webp的发展</h2><p>WebP，是一种同时提供了有损压缩与无损压缩的图片文件格式，派生自视频编码格式 VP8。WebP 最初在2010年发布，目标是减少文件大小，但达到 和 JEPG 格式相同的图片质量，希望能够减少图片档在网络上的发送时间。2011年11月8日，Google 开始让 WebP 支持无损压缩和透明色的功能。</p><p>根据 Google 较早的测试，WebP 的无损压缩比网络上找到的PNG档少了45％的文件大小，即使这些 PNG 档在使用 PNGCRUSH 和 PNGOUT 处理过，WebP 还是可以减少28％的文件大小。就目前而言，Webp 可以让图片大小平均减少70%。WebP 是未来图片格式的发展趋势。</p><h2 id="应用场景及优势"><a href="#应用场景及优势" class="headerlink" title="应用场景及优势"></a>应用场景及优势</h2><ul><li>客户端软件，内嵌了基于 Chromium 的 webview，这类浏览器中应用的网页是可以完全使用WebP 格式，提升加载渲染速度，不考虑兼容。</li><li>用 node-webkit 开发的程序，用 WebP 可以减少文件包的体积。</li><li>移动应用 或 网页游戏 ,界面需要大量图片,可以嵌入 WebP 的解码包，能够节省用户流量，提升访问速度优势：</li><li>对于 PNG 图片，WebP 比 PNG 小了45%。</li></ul><h2 id="效果对比"><a href="#效果对比" class="headerlink" title="效果对比"></a>效果对比</h2><h3 id="有损-WebP-VS-JPG"><a href="#有损-WebP-VS-JPG" class="headerlink" title="有损 WebP VS JPG"></a>有损 WebP VS JPG</h3><p><img src="/images/software/webp对比png和jpg/有损 WebPVSJPG.png" alt="有损 WebPVSJPG.png"></p><p>当 WebP 将 JPG 压缩到相当于原图 90% 质量 时，图片体积减少了 50% 左右。当 WebP 将 JPG 压缩到相当于原图 80% 质量时，图片体积则减少了 60%~80%。</p><p>有损 WebP 压缩性能优于 JPG 的原因主要是其预测编码技术先进，并且宏块自适应量化也带来了压缩效率的提升，而布尔算术编码与霍夫曼编码相比提升了 5%~10% 的压缩性能。</p><h3 id="无损-WebP-对比-PNG"><a href="#无损-WebP-对比-PNG" class="headerlink" title="无损 WebP 对比 PNG"></a>无损 WebP 对比 PNG</h3><p><img src="/images/software/webp对比png和jpg/无损 WebP对比PNG.png" alt="无损 WebP对比PNG.png"></p><p>上图是 PNG 原图与 WebP 无损的对比，WebP 无损对 PNG 图片的优化到达了 20%~40% 。</p><p>更多：<br><a href="https://tech.upyun.com/article/253/1.html">都说 WebP 厉害，究竟厉害在哪里？（算法）</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> basic knowledge of computer </tag>
+            
+            <tag> website </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站加载速度优化</title>
+      <link href="/2023/05/24/%E7%BD%91%E7%AB%99%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/"/>
+      <url>/2023/05/24/%E7%BD%91%E7%AB%99%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h2 id="从多个方面入手："><a href="#从多个方面入手：" class="headerlink" title="从多个方面入手："></a>从多个方面入手：</h2><ol><li><p>压缩文件：可以使用压缩工具如GZip等将文件压缩后再传输。这样可以减小传输文件的体积，提升了传输速度。</p></li><li><p>CDN缓存：使用CDN可以将静态文件缓存到多个节点，让用户可以从离他们最近的节点请求文件来加快访问速度。</p></li><li><p>压缩图片、文件大小：一般情况下，图片比较大，可以使用图片压缩工具把图片大小减小，从而减少加载时间。</p></li></ol><p><img src="/images/software/网站加载速度优化/developertoolrequest.png" alt="developertoolrequest.png"></p><p>开发者工具中通过请求大小排序和请求时间排序就能清晰看出需要优化哪些请求。</p><p>从上图可以看出这前几个请求数据量占全部数据量的2/3，加载时间也较长。</p><p>请求如下： </p><p><a href="http://localhost:4000/font/%E6%BC%94%E7%A4%BA%E5%A4%8F%E8%A1%8C%E6%A5%B7.ttf">http://localhost:4000/font/%E6%BC%94%E7%A4%BA%E5%A4%8F%E8%A1%8C%E6%A5%B7.ttf</a> </p><p>ttf格式的字体文件较大，所以网站中不好不要选择这种字体格式文件。</p><p>加载音频也是很消耗时间的。</p><p><a href="https://m701.music.126.net/20230524231920/625b0da94fa66a8a0f8dce7d5c2a5727/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/24873678347/92da/edc2/ceeb/1f0936988520d420a71609bc0d6ca45f.mp3">https://m701.music.126.net/20230524231920/625b0da94fa66a8a0f8dce7d5c2a5727/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/24873678347/92da/edc2/ceeb/1f0936988520d420a71609bc0d6ca45f.mp3</a></p><p>网站中的图片最好也是通过压缩的，使用源图片大小都在几MB，甚至十几MB，传输速率下降。图片最好选用webp格式。</p><p><a href="http://localhost:4000/assets/background.jpg">http://localhost:4000/assets/background.jpg</a></p><ol><li><p>去掉重复的代码：可以去掉多余的代码，例如多余的CSS、JavaScript、图片和HTML标记，从而减少文件的大小，增加载入速度。</p></li><li><p>使用最新的HTTP协议：最新的HTTP协议可以优化网站加载速度，例如HTTP/2使用多路复用技术，可以在一次连接中同时传输多个文件，从而提升传输速度。</p></li><li><p>增加服务器带宽：考虑增加带宽，提高网站服务器的同时连接数。</p></li><li><p>优化服务器：使用高效的Web服务器软件，如nginx等，进行服务器端优化，增强服务器的处理速度。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Optimization </tag>
+            
+            <tag> Website </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPU知识</title>
+      <link href="/2023/05/24/CPU%E7%9F%A5%E8%AF%86/"/>
+      <url>/2023/05/24/CPU%E7%9F%A5%E8%AF%86/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> computer </tag>
+            
+            <tag> CPU </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>AI网站集合</title>
+      <link href="/2023/05/24/AI%E7%BD%91%E7%AB%99%E9%9B%86%E5%90%88/"/>
+      <url>/2023/05/24/AI%E7%BD%91%E7%AB%99%E9%9B%86%E5%90%88/</url>
+      
+        <content type="html"><![CDATA[<h2 id="图像AI"><a href="#图像AI" class="headerlink" title="图像AI"></a>图像AI</h2><ol><li>DragGAN</li></ol><p>通过交互式精确变形图像的 DragGAN 刷屏 AI 业界学界</p><p>DragGAN 可将图像中的任意部分精确”拖动”到目标位置，从而操纵动物、汽车、人类、风景等不同类别的姿势、形状、表情和布局。当给定想要移动的部分 (操纵点) 和想要移动到的位置 (目标点)，AI就会驱动操纵点精确到达相应的目标点。用户也可以局部绘制 (掩码)，使掩码以外的部分固定不变。、</p><p><a href="https://vcai.mpi-inf.mpg.de/projects/DragGAN/">https://vcai.mpi-inf.mpg.de/projects/DragGAN/</a></p><ol><li>Blockade Labs</li></ol><p>Skybox AI 图像生成器的 Sketch 模式，该模式可根据您绘制的线条和文本提示创建环境。</p><p>Blockade Labs (<a href="http://skybox.blockadelabs.com/">http://skybox.blockadelabs.com/</a>)</p><ol><li>🚀 探索最佳AI绘画提示词工具：175Ai 🚀</li></ol><p>🔥 175Ai提供国内最好用的可视化AI提示词工具，让你的创作过程更加轻松愉快！</p><p>🎨 175Ai的三大亮点：<br>1️⃣ 提示词工具：上千种可视化提示词，简单易上手，为midjourney、stablediffusion、dalle等AI应用提供可视化帮助。<br>2️⃣ 每日灵感：每日更新极品提示词作品，一键免费复制，发现更多灵感。<br>3️⃣ AI业内快讯：掌握最新的AI动态，跟上行业发展步伐。</p><p>🌐 电脑网页端： www.175.ai<br>📱 微信小程序客户端：175Ai</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>加深爱国-10043号总统公告</title>
+      <link href="/2023/05/23/%E5%8A%A0%E6%B7%B1%E7%88%B1%E5%9B%BD-10043%E5%8F%B7%E6%80%BB%E7%BB%9F%E5%85%AC%E5%91%8A/"/>
+      <url>/2023/05/23/%E5%8A%A0%E6%B7%B1%E7%88%B1%E5%9B%BD-10043%E5%8F%B7%E6%80%BB%E7%BB%9F%E5%85%AC%E5%91%8A/</url>
+      
+        <content type="html"><![CDATA[<h2 id="10043号总统公告内容"><a href="#10043号总统公告内容" class="headerlink" title="10043号总统公告内容"></a>10043号总统公告内容</h2><p>特朗普在2020年5月签署了总统令PP10043，该行政令规定在签证审核中，签证官可以因为学生学者就读专业以及研究方向，毕业于特定高校（北航，北理工，哈工大，哈工程，西工大，南理工南航等学校），或者学生受CSC资助等为由，而拒绝发放赴美签证。</p><p>“暂停和限制”包括目前或曾经受雇于实施或支持军民融合战略的机构，在实施或支持军民融合战略的机构学习或做研究的相关人员寻求通过 F 或 J 签证进入美国学习或进行美国研究的任何中国公民的非移民入境美国，同时，但寻求本科学习的学生除外。</p><p>注： 敏感大学艺术生都会被拒签，10043法令牵扯的不仅仅是STEM理科生.</p><p>影响的学生大多都毕业于10043提到的特定学校计划前往美国高校攻读STEM专业的硕士或博士研究生学位。</p><h2 id="STEM"><a href="#STEM" class="headerlink" title="STEM"></a>STEM</h2><blockquote><p>STEM由科学（Science）、技术（Technology）、工程（Engineering）和数学（Mathematics）四部分的首字母组成。是美国鼓励学生主修科学、技术、工程及数学的一项计划。在美国国土安全局网站上可以查到一个长长的属于STEM计划的专业列表，比如化工、计算机科学、物理、数学、生物科学和航空航天等理工科。</p><p>STEM专业包括工程类、生物科学、数学、物理科学及相关领域专业。</p></blockquote><h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>如果你现在正就读于敏感院校，并且有在硕士或博士阶段留学的打算，那么在未来准备申请阶段必须要考虑英国，加拿大或者欧洲其他大学。</p><p>如果你正在就读于非敏感大学的敏感专业，可以先放宽心申请，但是一定要给自己计划好Plan B，如果被拒签至少不会落到没学上的地步。</p><p>如果原本为孩子计划本科在国内读STEM专业，硕士去美国读的话，可以考虑考虑是否要本科阶段就直接出国读</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notice </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> notice </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>循环神经网络RNN</title>
+      <link href="/2023/05/19/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9CRNN/"/>
+      <url>/2023/05/19/%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9CRNN/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> AI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> deep learning </tag>
+            
+            <tag> neural network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DNS污染</title>
+      <link href="/2023/05/19/DNS%E6%B1%A1%E6%9F%93/"/>
+      <url>/2023/05/19/DNS%E6%B1%A1%E6%9F%93/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是DNS污染"><a href="#什么是DNS污染" class="headerlink" title="什么是DNS污染"></a>什么是DNS污染</h2><p>DNS污染又称域名污染”、“域名欺骗”和“域名服务缓存投毒”，是指通过制作域名服务数据包，将域名指向不正确的IP地址。</p><p>在正常的DNS解析过程中，下一级域名服务器会将从上游域名服务器获得的解析记录保存一段时间，当在TTL值失效之前，有相同域名的解析请求时，就会直接将解析记录告知客户端，而无需进行全球范围的递归查询，这样既加快了查询时间，同时也降低了服务器工作压力。</p><p>但在这个过程中，如果局域域名服务器的缓存受到污染，就会告知客户端错误的解析记录，从而将用户指向错误的网站。这种攻击方式，被称为DNS污染。</p><h2 id="常见场景"><a href="#常见场景" class="headerlink" title="常见场景"></a>常见场景</h2><p>某些网络运营商为了达成某些目的，对DNS进行某些操作，就会导致使用ISP正常上网设置无法通过域名访问正确的IP地址。如果掌握了部分国际DNS根目录服务器或镜像，也可以通过DNS污染的方式，屏蔽对特定网站的访问。</p><p>许多国内被禁止的网站都是通过DNS污染实现的，如google、YouTube等网站无法直接访问都是通过DNS污染方式实现的。</p><p>因为<a href="http://google.com的服务器在国外，所以在访问时DNS解析必须转到国际带宽的输出，然后会被GFW捕获。由于DNS使用UDP协议，而UDP没有验证机制，只需发送即可。因此，此时GFW伪装成一个相应的DNS服务器，就会返回错误的地址信息。">http://google.com的服务器在国外，所以在访问时DNS解析必须转到国际带宽的输出，然后会被GFW捕获。由于DNS使用UDP协议，而UDP没有验证机制，只需发送即可。因此，此时GFW伪装成一个相应的DNS服务器，就会返回错误的地址信息。</a></p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol><li>解决方案1：需要能够替换DNS解析服务器。通常，域名注册企业提供免费的DNS解析服务。域名提供商可以提供许多免费的DNS解析服务，并且其解析速度非常快，多组DNS服务器，可以更好地避免被DNS污染。</li><li>解决方案2：使用第三方DNS解析服务，以及使用CDN服务，CDN服务商会提供他们的DNS服务器解析服务和CDN的网络IP地址 。</li></ol><blockquote><p>注：GFW（Great Firewall of China）是一个集中的官方项目，旨在控制和监管互联网及其内容。该项目使用一系列技术手段实现其目标，其中包括DNS污染、IP封锁和Deep Packet Inspection（DPI）技术等。这些技术可以检测和过滤流经中国边境的数据流量，屏蔽不符合规定的数据包。具体来说，GFW在客户端和服务器之间建立了一个过滤器，它通过检查网络传输中的IP地址、域名和URL等元数据，以及数据报文中的内容和协议等信息，判断该数据流是否违反防火墙规定。若此内容被识别为敏感或违规，则会被GFW阻止，使用户无法访问相关网站和服务。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Network </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network </tag>
+            
+            <tag> DNS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客文章三栏</title>
       <link href="/2023/05/14/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E4%B8%89%E6%A0%8F/"/>
       <url>/2023/05/14/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E4%B8%89%E6%A0%8F/</url>
@@ -20,9 +205,9 @@
       
         <tags>
             
-            <tag> blog </tag>
-            
             <tag> butterfly </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
@@ -64,7 +249,7 @@
       <link href="/2023/05/09/%E4%B8%BB%E6%9D%BF%E7%9F%A5%E8%AF%86/"/>
       <url>/2023/05/09/%E4%B8%BB%E6%9D%BF%E7%9F%A5%E8%AF%86/</url>
       
-        <content type="html"><![CDATA[<h2 id="什么是主板"><a href="#什么是主板" class="headerlink" title="什么是主板"></a>什么是主板</h2><p>主板就是电脑的骨骼，用来承载和连接各种电脑配件的配件。同时，也是处理器的家。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="什么是主板"><a href="#什么是主板" class="headerlink" title="什么是主板"></a>什么是主板</h2><p>主板就是电脑的骨骼，用来承载和连接各种电脑配件的配件。同时，也是处理器的家。</p><p><img src="/images/computer/主板示意图.png" alt="主板示意图.png"></p><p>主板上各种插槽以及功能</p><p>1、主电源，辅助电源接口</p><p>2、处理器插口</p><p>3、内存插槽，一般2到4个插槽或更多;</p><p>5、PCI-E接口：独立显卡插槽;</p><p>6、PCI接口：独立网卡，独立声卡等其它外设接口</p><p>7、硬盘接口：stat接口接stat接口的硬盘或光驱，Ｍ.２接口，接M.2接口的固态硬盘。</p><blockquote><p>选购主板一般都是先选好处理器后才选择主板，因为每一代的处理器对应的主板芯片组都不一样。好马配好鞍，好的处理器，相对应的主板价格也高。</p></blockquote><h2 id="主板分类"><a href="#主板分类" class="headerlink" title="主板分类"></a>主板分类</h2><p>主板多是以芯片组分类的。芯片是有处理能力的集成电路，芯片组就是由多块芯片构成的芯片集。过去，芯片组有两名成员：在主板上方靠近CPU的北桥（也称主桥，North Bridge，NB）芯片和右下方与PCI槽相邻的南桥（South Bridge，SB）芯片：</p><p><img src="/images/computer/主板-南桥北桥.png" style="width: 500px"/> </p><p>NB主要控制CPU与内存之间的数据传输，SB主要控制I/O（Input/Output）接口。随着成本和稳定性的需要，NB的部分功能如内存控制器和核心显卡被集成到CPU中，剩余功能与SB集成在一起，形成看起来只有SB的现在的主板的样貌，称为单桥（PCH）。</p><p>过去，NB肩负着CPU运算的重任，故芯片组均以NB的类型命名，如H81、B85、Z87等。相应地，也把搭载不同芯片组的主板简称为H81主板、B85主板等，便形成了主板的分类。</p><h3 id="芯片组区别"><a href="#芯片组区别" class="headerlink" title="芯片组区别"></a>芯片组区别</h3><ol><li><p>芯片组不同，可承载的硬件规格就不同。一般来说，更高端的芯片组，可承载的其他硬件规格就更高。不同芯片组支持的最大内存频率、M.2接口的支持与否等区别不胜枚举。</p></li><li><p>芯片组不同，可承载的硬件数量就不同。一般来说，更高端的芯片组，可承载的硬件数量就更多。如内存插槽数量、USB接口数、PCI-E总线数、SATA接口数</p></li><li><p>芯片组不同，拓展功能也不同。一般来说，更高端的芯片组，拓展性就更强，可玩性也更强。</p></li></ol><h2 id="如何选主板"><a href="#如何选主板" class="headerlink" title="如何选主板"></a>如何选主板</h2><ul><li>板型 </li></ul><p>常见的板型由大到小分别为XL-ATX，ATX，M-ATX，ITX。</p><p>这里的命名是比较混乱的，尤其在电商购买时往往分类不标准：</p><p>XL-ATX一般也记为E-ATX；</p><p>ATX也称Standard-ATX，是标准板型；</p><p>M-ATX即Micro-ATX，其实包括正宗的M-ATX和μ-ATX：M-ATX为正方形；μ-ATX为宽度比M-ATX小的长方形，尺寸比M-ATX更小；</p><p>ITX又称Mini-ITX；</p><p><img src="/images/computer/主板板型.png" alt="主板板型.png"></p><p>尺寸小的主板，插槽固然也少。其中M-ATX一般瞄准低端市场，用料也会比较低端，价格上一般比较便宜。ITX用于组装小巧精致的Mini台式机，这类台式机更多是为了美观和给发烧友装13用的，所以某些主板厂商机（jiao）智（hua）地瞄准这些高端用户推出用料精良的高端ITX主板，所以某些产品比ATX主板还贵。</p><ul><li>I/O接口</li></ul><p>不同芯片组可支持的I/O接口的类型和数量是不同的，另外，I/O接口也由主板厂商的设计决定</p><ul><li>供电模块</li></ul><p>电力从电源传输到主板，主板进行稳流和调制后传输给各个硬件，供电模块的作用便是为硬件提供稳定、纯净的电流。供电模块的构成比较复杂，普通DIYer一般关注供电相数、电子元件的质量等。其中电子元件的质量取决于生产元件的厂家，主板厂商一般会把所用的元件品牌型号列出，这里不予讨论，仅讨论供电相数。</p><p>供电相数：一相供电由一个电感，一个电容和一对MOS管组成，用于滤波、稳流。随着CPU性能的增强，对供电的要求越来越高，主板的供电相数也越做越多。</p><p>供电相数多，自然可以提供更稳定的电流。但过多也是有弊端的：首先，电子元件多了，价格自然也贵。其次，电子元件的增加使电路变复杂，后果便是主板设计更加困难，小厂商设计跟不上却又想增加供电相数，结果就是供电设计不合理，容易坏；采用更优秀的设计，设计成本又上来了，只能从用户中赚回来，又变贵。供电模块多，发热问题也很严重，如果设计时不加装供电模块的散热片，发热过大容易导致元件烧毁；加装散热片又会增加成本，还是一个字：贵。</p><ul><li>内存插槽</li></ul><p>内存插槽的数量，两根还是四根</p><ul><li>SATA接口</li></ul><p><img src="/images/computer/主板-sata接口.png" alt="主板-sata接口.png"></p><p>目前SATA接口分为2.0和3.0版本，后者传输速度较高。不同主板提供的SATA接口种类和数量可能不同。</p><ul><li>PCH设计</li></ul><p>某些主板总是比其他主板便宜，其实可能是PCH设计偷工减料。这里主要是指PCH散热设计。</p><ul><li>PCI-E接口</li></ul><p>对于普通用户来说，PCI-E接口的数量和种类并不太重要，能装个独显打打撸、插个无线网卡就行了。但对于高端用户来说，多卡SLI或CF、视频采集卡、无线网卡等一起上的时候，PCI-E插槽还是十分重要的。</p><ul><li>其他芯片</li></ul><p>声卡、网卡</p><h2 id="简单粗暴无脑选购主板大法"><a href="#简单粗暴无脑选购主板大法" class="headerlink" title="简单粗暴无脑选购主板大法"></a>简单粗暴无脑选购主板大法</h2><p>方法论与世界观：主板越大越好，外观越酷炫越好，看起来很装13，恩，就选它！</p><p>第一步：选择芯片组。玩超频选Z系，不玩超频选B系；</p><p>第二步：选择价位。</p><p>第三步：比较同价位的产品。300附近看评论；500附近看参数；1000附近看附加功能；1500以上看够不够炫酷、灯光够不够多、散热片够不够夸张、颜色够不够装13。</p>]]></content>
       
       
       <categories>
@@ -123,14 +308,14 @@
       
       <categories>
           
-          <category> Hardware </category>
+          <category> Computer </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hardware </tag>
+            <tag> computer </tag>
             
             <tag> memory </tag>
             
