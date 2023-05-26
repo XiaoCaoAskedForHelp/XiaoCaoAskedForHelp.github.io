@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>网站标题魔改</title>
+      <link href="/2023/05/26/%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98%E9%AD%94%E6%94%B9/"/>
+      <url>/2023/05/26/%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98%E9%AD%94%E6%94%B9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li><p>新建文件[BlogRoot]\source\js\custom.js，写入以下内容：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//动态标题</span></span><br><span class="line"><span class="keyword">var</span> <span class="title class_">OriginTitile</span> = <span class="variable language_">document</span>.<span class="property">title</span>;</span><br><span class="line"><span class="keyword">var</span> titleTime;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;visibilitychange&#x27;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="variable language_">document</span>.<span class="property">hidden</span>) &#123;</span><br><span class="line">    <span class="comment">//离开当前页面时标签显示内容</span></span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&#x27;🚀不要走嘛，在看看吧~&#x27;</span>;</span><br><span class="line">    <span class="built_in">clearTimeout</span>(titleTime);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">//返回当前页面时标签显示内容</span></span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">title</span> = <span class="string">&#x27;⚓欢迎回来～&#x27;</span>;</span><br><span class="line">    <span class="comment">//两秒后变回正常标题</span></span><br><span class="line">    titleTime = <span class="built_in">setTimeout</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">document</span>.<span class="property">title</span> = <span class="title class_">OriginTitile</span>;</span><br><span class="line">    &#125;, <span class="number">2000</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li><li><p>在主题配置文件_config.butterfly.yml引入该文件：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inject: </span><br><span class="line">  bottom: </span><br><span class="line">+    - &lt;script async src=&quot;/js/custom.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></li></ol><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/images/blog/网站标题魔改/效果.png" alt="效果.png"></p><blockquote><p>tips: 网站图标更改： 替换文件themes/butterfly/source/img/favicon.png</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于时区的那些事</title>
+      <link href="/2023/05/25/%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+      <url>/2023/05/25/%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="C-中的时区"><a href="#C-中的时区" class="headerlink" title="C#中的时区"></a>C#中的时区</h2><p>先来看两种图：</p><p><img src="/images/software/timezone/CSharp中时间类型.png" alt="C#中时间类型.png"></p><p><img src="/images/software/timezone/当前时间结果.png" alt="当前时间结果.png"></p><p>可以看出时区utcnow显示的utc时间，而now显示的就是本地时间，而跨国的项目中为了保证时间的一致性，统一采用的utc时间，然后前台转换为本地时间进行显示。</p><p><img src="/images/software/timezone/time代码.png" alt="time代码.png"></p><h2 id="postgresql数据库"><a href="#postgresql数据库" class="headerlink" title="postgresql数据库"></a>postgresql数据库</h2><p>postgresql数据库支持时区格式存储，如</p><p><img src="/images/software/timezone/存储结果.png" alt="存储结果.png"></p><p>这是因为 PostgreSQL 在将时间戳类型的值从客户端转换为服务器内部的格式时，会自动将其转换为postgresql中设置的时区，从而保持时间的一致性。</p><p><img src="/images/software/timezone/postgres配置文件.png" alt="postgres配置文件.png"></p><p>如果你配置文件是其他时区的设置，比如GMT (格林尼治标准时间) ：UTC+0时区，那么数据库中存储的就是+0数据。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2023-01-10 03:15:57+00</span><br></pre></td></tr></table></figure><p>如果你希望插入一个特定时区的时间戳，可以通过在 timestamp with time zone 值后面添加时区偏移量的方式来表示。例如：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> mytable (mytimestamp) <span class="keyword">VALUES</span> (<span class="string">&#x27;2023-05-22 00:12:22.238828+00&#x27;</span>);</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> mytable (mytimestamp) <span class="keyword">VALUES</span> (<span class="string">&#x27;2023-05-22 00:12:22.238828+03&#x27;</span>);</span><br></pre></td></tr></table></figure><p>这个例子插入的时间戳时区偏移量是 +08 和 +03，表示东八区时间和东三区。在这种情况下，插入的值会被转换为postgresql配置文件中设置的时区的utc时间，并存储到 mytable 表中（在数据库中存储的时间戳总是以 UTC 时间格式存储）。</p><h2 id="时区查询"><a href="#时区查询" class="headerlink" title="时区查询"></a>时区查询</h2><p><img src="/images/software/timezone/timezone的一些尝试.png" alt="timezone的一些尝试.png"></p><p>注意，在 PostgreSQL 中，当你查询一个 timestamp with time zone 类型的字段时，它会根据客户端设置的时区自动转换为本地时间。如果你想以其他时区的形式查询，可以使用 AT TIME ZONE 关键字来指定时区，例如：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> mytimestamp <span class="keyword">AT</span> <span class="type">TIME</span> ZONE <span class="string">&#x27;UTC&#x27;</span> <span class="keyword">FROM</span> mytable;</span><br></pre></td></tr></table></figure><p>这个例子以 UTC 时区的形式查询 mytable 表中的 mytimestamp 字段。你可以将 UTC 替换为其他时区来查询该时区下的时间。</p><p>当你设置了其他时区,查出来的结果就是那个时区的时间，很智能。</p><p>但是你插入时间的值时，还是按照你数据库配置文件的时区的,不会因为set time zone而改变。 如果你的数据库配置文件中的时区是东八区，那么即使你执行了 set time zone “Africa/Bujumbura”;，在你插入 TIMESTAMP WITH TIME ZONE 类型的数据时，也会自动将其转换为东八区的时间，并存储在数据库中。</p><blockquote><p>tips: 修改了配置文件一定要重启数据库，否则还是原来的时区显示和插入。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> postgresql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>webp相对于png和jpg有什么优势</title>
       <link href="/2023/05/24/webp%E7%9B%B8%E5%AF%B9%E4%BA%8Epng%E5%92%8Cjpg%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF/"/>
       <url>/2023/05/24/webp%E7%9B%B8%E5%AF%B9%E4%BA%8Epng%E5%92%8Cjpg%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E5%8A%BF/</url>
