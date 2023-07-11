@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>HDMI、DP、DVI、VGA哪个更好</title>
+      <link href="/2023/07/11/HDMI%E3%80%81DP%E3%80%81DVI%E3%80%81VGA%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%A5%BD/"/>
+      <url>/2023/07/11/HDMI%E3%80%81DP%E3%80%81DVI%E3%80%81VGA%E5%93%AA%E4%B8%AA%E6%9B%B4%E5%A5%BD/</url>
+      
+        <content type="html"><![CDATA[<h2 id="VGA"><a href="#VGA" class="headerlink" title="VGA"></a>VGA</h2><p>CRT 显示器（大头）时代，VGA 接口兴起，因为 CRT 显示器是模拟设备，所以 VGA 连接线也传输模拟信号。虽然后来液晶显示器不用模拟信号了，但也继承了 VGA 接口，显示器内部装有 A/D 转换器，将 VGA 的模拟信号转换为数字信号。<br>VGA 一般最高支持 1080P，再往上性能就跟不上了，画面会虚、抖动、拖影。</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/vga.png" alt="vga接口.png"></p><h2 id="VGA-1"><a href="#VGA-1" class="headerlink" title="VGA"></a>VGA</h2><p>DVI还没兴起就被遗忘。它型号的型号太多，和现在主流的 HDMI 差不多，只是支持的分辨率稍微差一些。</p><p>最关键的是 DVI 和它的前辈们，都不支持音频传输。</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/DVI.jpg" alt="DVI接口的各种型号.jpg"></p><h2 id="HDMI"><a href="#HDMI" class="headerlink" title="HDMI"></a>HDMI</h2><p>HDMI 俗称「高清线」，正面看起来是左右对称的梯形。是目前最常见的连接线，电视、电脑、投影都支持它。一根 HDMI 就能同时传输画面和音频。</p><p>HDMI 经过了很多次升级，简单介绍一下各版本不同：</p><p>HDMI 1.4：4K 24Hz（4,096 x 2,160），4K 30Hz（3,840 x2,160）以及1080P 120Hz；</p><p>HDMI 2.0：4K 60Hz，更高版本（HDMI 2.0a 和 2.0b）还包含对 HDR 的支持；HDMI 2.0 虽然在开启 HDR 的情况下以 4: 4: 4 色度显示只支持 4K 60Hz，但如果关掉 HDR 后以 4: 2: 0 色度显示，它的带宽也能支持 4K 120Hz。</p><p>HDMI 2.1：巨幅升级！10K 120Hz，并且还有动态 HDR，增强的音频通道允许传输杜比 Atmos 和 DTS:X 音频。</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/像素变化.png" alt="像素变化.png"></p><p>另外 HDMI 还有两个衍生版本 Mini HDMI 和 Micro HDMI。</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/HDMI类型.jpg" alt="HDMI类型.jpg"></p><p>这两种接口更小，主要用在小型设备，例如相机、便携播放器，性能上没有差别。</p><h3 id="HDR补充"><a href="#HDR补充" class="headerlink" title="HDR补充"></a>HDR补充</h3><h4 id="什么是真4K"><a href="#什么是真4K" class="headerlink" title="什么是真4K"></a>什么是真4K</h4><p>根据2015年中期发布的UHD（4K的另一种叫法）标准，真4K需要满足以下几个条件：</p><ol><li>分辨率达到3840X2160</li><li>采用BT2020广色域</li><li>色深【可以理解为色彩数量】达到10bit或12bit</li><li>采用HDR高动态对比显示技术</li><li>采用HDMI2.0接口传输【4K@60Hz】</li><li>……..</li></ol><p>HDR(High-Dynamic Range)简单来说就是一种提高影像亮度和对比度的处理技术，它可以将每个暗部的细节变亮，暗的地方更暗，丰富更多细节色彩，让电影，图片都能呈现出极佳的效果。</p><p><strong>dynamic range 通常是一张图中最亮点的亮度/最暗点的亮度.</strong></p><p>通常我们拍摄的照片，假设是以jpg/png的格式储存。那么他们的dynamic range最大也就是8位256这个就是我们所说的ldr(low dynamic range)。hdr通过多张张照片叠加可以做到dynamic range上万。</p><h5 id="如何叠加成为HDR？"><a href="#如何叠加成为HDR？" class="headerlink" title="如何叠加成为HDR？"></a>如何叠加成为HDR？</h5><p>首先是相机的宽容度（亮度区间）小于自然接的亮度范围（动态范围），所以通过拍摄三张照片，曝光不足，正常曝光和曝光过度的照片使用算法进行叠加，这样就得到一张明暗都不会丢失的照片，当然显示器能力不足也会压缩动态范围。</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/SDR&amp;HDR.png" alt="SDR&amp;HDR.png"></p><p>传统SDR（标准对比度）最高亮度只有100nit,画面中高于100nit的部分将被失真（丢失），最低调试为0.1nit,画面中低于0.1nit的部分将被丢失。HDR技术的出现，让最高亮度达到数千nit,，最低亮度达到了0.0005nit,极大的拓展了画面中亮度高于100nit以及低于0.1nit部分的细节，同时让整幅画面看上去更加通透明快、细节丰富。</p><p>4K与蓝光相比技术标准明显更“麻烦”一些。比如就HDR技术来讲，就有<strong>HDR10、HDR10+、HLG、单层杜比视界（Dolby Vision MEL）、双层杜比视界（Dolby Vision FEL）</strong>。4K的另一个“麻烦”之处是色深标准也不统一，即色彩标准也分为10bit(10.7亿色，三原色各分2的10次方色阶，根据排列组合原理，总色彩数量为三个2的10次方相乘=10.7亿色)，和12bit(三原色各有2的12次方种色阶，总色彩数量=三个2的12次方相乘=685亿色)两种标准。</p><h2 id="DP"><a href="#DP" class="headerlink" title="DP"></a>DP</h2><p>DisplayPort（简称 DP），正面看上去它像是缺了一角的长方形，能够同时传输画面和音频。</p><p>对比一下 DP 与 HDMI 各代差异：</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/DP&amp;HDMI.webp" alt="DP&amp;HDMI.webp"></p><p>排序的话应该是 DP2.0 &gt; HDMI 2.1 &gt; DP 1.4 &gt;DP 1.3 &gt; HDMI 2.0 &gt; DP 1.2 &gt; HDMI 1.4。</p><h2 id="DP-vs-HDMI-其他区别"><a href="#DP-vs-HDMI-其他区别" class="headerlink" title="DP vs HDMI 其他区别"></a>DP vs HDMI 其他区别</h2><p>FreeSync 和 G-Sync 分别是 AMD 和 Nvidia 的可变刷新率技术（VRR），用于解决画面撕裂和卡顿问题。</p><p><img src="/images/computer/HDMI、DP、DVI、VGA/VRR.png" alt="VRR.png"></p><p>HDMI 从 2.0b 开始可通过 AMD 扩展支持 FreeSync，但不支持 Nvidia 的 G-Sync。据说 HDMI2.1 将支持。<br>而 DP 线则同时支持 FreeSync 和 G-Sync</p><p>线缆越长图像音频信息丢失和延迟越严重。DP线的最大长度大约在 3m 左右，但建议 DP 线长最好不要超过 1.8m，否则显示质量会大打折扣。 而 HDMI 的长度优势就很大，最高支持 15m。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> computer </tag>
+            
+            <tag> hardware interface </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网站加载速度优化II</title>
       <link href="/2023/06/06/%E7%BD%91%E7%AB%99%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96II/"/>
       <url>/2023/06/06/%E7%BD%91%E7%AB%99%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96II/</url>
