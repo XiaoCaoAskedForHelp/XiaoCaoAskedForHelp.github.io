@@ -4,11 +4,67 @@
   
     
     <entry>
+      <title>PVE操作系统</title>
+      <link href="/2023/07/13/PVE%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <url>/2023/07/13/PVE%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="虚拟系统是什么？"><a href="#虚拟系统是什么？" class="headerlink" title="虚拟系统是什么？"></a>虚拟系统是什么？</h2><p>虚拟系统（Virtual System，VSYS）是一种虚拟化技术，指在一台物理设备上划分出多个相互独立的逻辑设备。每个虚拟系统相当于一台真实的设备，拥有自己的资源，管理员可以对虚拟系统内部的业务和资源进行单独的配置和管理。</p><p><img src="/images/computer/PVE/虚拟化.png" alt="虚拟化.png"></p><h2 id="虚拟化技术"><a href="#虚拟化技术" class="headerlink" title="虚拟化技术"></a>虚拟化技术</h2><h3 id="定义和分类"><a href="#定义和分类" class="headerlink" title="定义和分类"></a>定义和分类</h3><p>虚拟化技术是一种将物理资源（如处理器、内存、存储和网络）划分为多个虚拟环境的技术，以提供更高效的资源利用和灵活性。</p><p>计算虚拟化：</p><ul><li><p>全虚拟化（Full Virtualization）：在全虚拟化中，虚拟机完全模拟了物理计算机的硬件，包括处理器、内存、硬盘等。主要的全虚拟化技术有VMware ESXi、Microsoft Hyper-V和KVM（Kernel-based Virtual Machine）。</p></li><li><p>半虚拟化（Paravirtualization）：在半虚拟化中，虚拟机不是完全模拟物理硬件，而是通过修改操作系统内核来与虚拟化层进行通信。这种方式可以提供更高的性能，但需要对操作系统进行修改。主要的半虚拟化技术包括Xen和Oracle VM VirtualBox。</p></li><li><p>容器化（Containerization）：容器化是一种轻量级虚拟化技术，通过在操作系统层面上隔离进程和资源，实现多个相互独立的容器。容器与宿主机共享操作系统内核，因此性能较高且启动速度快。常见的容器化技术包括Docker和Kubernetes。</p></li><li><p>硬件辅助虚拟化（Hardware-assisted Virtualization）：硬件辅助虚拟化利用硬件的特殊功能来提高虚拟化性能和安全性。这种技术通常使用处理器的虚拟化扩展（如Intel VT和AMD-V）来增强虚拟化性能。大多数主流虚拟化平台都支持硬件辅助虚拟化。</p></li></ul><p><img src="/images/computer/PVE/计算虚拟化类别.png" alt="计算虚拟化类别.png"></p><p><img src="/images/computer/PVE/表格对比.png" alt="表格对比.png"></p><p>还有其他一些特定领域的虚拟化技术，例如网络虚拟化、存储虚拟化和桌面虚拟化等</p><h3 id="开源虚拟机-KVM"><a href="#开源虚拟机-KVM" class="headerlink" title="开源虚拟机 KVM 　　"></a>开源虚拟机 KVM 　　</h3><p>KVM (全称是 Kernel-based Virtual Machine) 是 Linux 下 x86 硬件平台上的全功能虚拟化解决方案，包含一个可加载的内核模块 kvm.ko 提供和虚拟化核心架构和处理器规范模块。 　　</p><p>使用 KVM 可允许多个包括 Linux 和 Windows 每个虚拟机有私有的硬件，包括网卡、磁盘以及图形适配卡等。</p><h2 id="PVE"><a href="#PVE" class="headerlink" title="PVE"></a>PVE</h2><h3 id="定义和功能"><a href="#定义和功能" class="headerlink" title="定义和功能"></a>定义和功能</h3><p>「虚拟化系统」，其中最主流的就有 ESXi、PVE、Unraid 三者。</p><p>PVE (全称 Proxmox Virtual Environment) 是一个既可运行虚拟机也能运行 Docker 容器的虚拟化环境平台。它基于 Debian 和 KVM 技术开发，完全开源免费！</p><p>可以将它想象成一个专门用于跑虚拟机的宿主系统 (虚拟机管理平台)，它同时支持两种虚拟化技术：KVM 虚拟机和 LXC 容器。</p><p>通过 PVE，你可以很方便地在一台主机上运行多种不同用途的系统，或安装各类应用容器，从而打造出一台适合你自用的“万能用途”的超级 All in One 多合一主机。比如安装：OpenWRT 旁路由 + 黑群晖 DSM + 离线下载 + NGINX + 私有网盘 + HTPC 影音播放平台 + 远程打印 + Windows + Linux 系统等等</p><h3 id="与-VMWare、Parallels-Desktop、Hyper-V-的区别："><a href="#与-VMWare、Parallels-Desktop、Hyper-V-的区别：" class="headerlink" title="与 VMWare、Parallels Desktop、Hyper-V 的区别："></a>与 VMWare、Parallels Desktop、Hyper-V 的区别：</h3><p>PVE 与大家常接触的 VMWare、Parallels Desktop、VirtualBox、Hyper-V 虚拟机不一样的地方在于，PVE 自己本身就是一款操作系统 (基于 Debian 开发而来，专门为虚拟化进行定制和优化)，而后者们则都是跑在 Windows、macOS、Linux 系统上的一款应用程序。</p><p>从系统资源的调度、虚拟机对硬件资源的利用率、稳定性以及统一管理的可用性来说，PVE 都要强于这些常见虚拟机软件。当然它们其实不是直接的竞争对手，因为主要用途和使用场景都不同，PVE 主要专注于提供整体的虚拟化解决方案，更适合生产环境和专用用途设备使用。</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>具有去中心化、超融合、高可用、开源低成本、易于实施管理等诸多优点。而且兼容性特别好，基本能在所有普通 PC 上安装。</p><h3 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h3><ol><li>下载 PVE 系统最新版本的 ISO 镜像 (下载地址位于本文结尾处)</li><li>准备一个容量充足的 U 盘</li><li>使用 Rufus 或 Ventoy 等工具，将 ISO 制作成可启动的 U 盘</li><li>电脑设置为 USB 启动，插入 U 盘引导</li><li>选择 Install Proxmox VE，根据界面提示一步一步安装</li><li>安装途中会要求设置时区、ROOT 密码等信息</li><li>注意需要设置正确的网络信息，包含 IP、网关、DNS 等，(其中 Hostname 是域名，你有的话可以填)，这里务必要记下你设置的 IP 地址，日后都需要它来访问！</li><li>安装过程完毕后，会出现命令行提示，输入 root 和你设置的密码测试能否正常登入</li><li>在局域网内另一台电脑的浏览器上，访问 PVE 主机的 WEB 管理界面。默认端口号是 8006，假如你设的 IP 是 192.168.1.88，那么就访问 <a href="http://192.168.1.88:8006">http://192.168.1.88:8006</a></li><li>同样输入 root 和你的密码，即可进入 PVE 的网页版管理界面，大功告成！</li><li>现在你可以自由创建虚拟机，安装任意操作系统了</li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>PVE 和 VMWare (ESXI) 这类虚拟化平台环境绝对是用来测试软硬件、玩机、玩系统、体验、尝鲜各种各样操作系统的最佳工具！</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://zhuanlan.zhihu.com/p/55025102">Nas 系统的虚拟化方案</a> 大佬讲的是真好</p><p><a href="https://www.iplaysoft.com/pve.html">PVE 8.0 (Proxmox) 虚拟机系统 - 开源免费！安装多款不同系统 / 打造万能主机</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+          <category> System </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NAS </tag>
+            
+            <tag> Operating System </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NAS折腾日记</title>
+      <link href="/2023/07/13/NAS%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/"/>
+      <url>/2023/07/13/NAS%E6%8A%98%E8%85%BE%E6%97%A5%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自己DIY的上限真的很高，如果自己能力强，NAS真的能被玩出花来。我也只是偶尔看到了NAS，并且被大佬的DIY折服，想着自己能不能折腾一下。</p><h2 id="开始了解NAS"><a href="#开始了解NAS" class="headerlink" title="开始了解NAS"></a>开始了解NAS</h2><p>NAS的全称叫做：Network Attached Storage，直接翻译就是“网络附属存储”。</p><p>简单来说就是连接在网络上，具备资料存储功能的装置，你可以随时存取任何资料文件。简单来说就是网盘，这可比百度网盘（限速是真的无语）好用多了。</p><p>简单来说就是一台硬盘很大，存储能力很强的电脑，所以直接使用旧电脑就行。</p><ol><li>旧电脑</li><li>路由器</li><li>硬盘 - 日立企业级机械硬盘 8T</li></ol><h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><p>我想要的功能包括多媒体中心、网站环境搭建、Frp、远程下载、远程连接、共享 NAS 硬盘空间。</p><h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><p>软件：宿主机PVE；虚拟机freenas；硬盘直通给freenas；</p><p>推荐超级好用的重装系统的神器 —— ventoy，理由如下：<br>无需格式化优盘，只需在U盘中安装ventoy，然后将所需的ISO镜像文件拷贝至U盘中即可</p><p><img src="/images/computer/NAS/ventoy界面.png" alt="ventoy界面.png"></p><p>在开机bios中选择重启，即可在Ventoy界面中选择自己想要的ISO镜像文件重装系统。</p><p>注：记得在bios设置中开始虚拟化技术。</p><p><img src="/images/computer/NAS/ventoy选择界面.jpg" alt="ventoy选择界面.jpg"></p><p>PVE系统设置需要注意的就是邮箱，IP,DNS,网关。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> NAS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NAS </tag>
+            
+            <tag> DIY </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>部署碰到的问题</title>
       <link href="/2023/07/11/%E9%83%A8%E7%BD%B2%E7%A2%B0%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
       <url>/2023/07/11/%E9%83%A8%E7%BD%B2%E7%A2%B0%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<p>注意：别忘了开服务器防火墙的端口，不然无法访问。</p><p><br/></p><p>问题一：</p><p>直接将windows电脑上生成过的git秘钥复制黏贴到linux服务器上，使用时报以下错误</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0644 for &#x27;/root/.ssh/id_rsa&#x27; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">git@github.com: Permission denied (publickey).</span><br></pre></td></tr></table></figure><p>原因：文件夹权限开放的太多</p><p>解决方案：chmod 600 ~/.ssh/id_rsa</p><p><br/></p><p>Hi XiaoCaoAskedForHelp! You’ve successfully authenticated, but GitHub does not provide shell access.</p><p>这个不是错，它只是想告诉你，github 不允许 shell 交互。仅此而已。</p><p><br/></p><p>问题二：</p><p>nginx部署出现文件访问权限问题</p><p>原因：主机上的文件权限比较低，所以无法访问，调整一下就行。</p><p>解决方案：</p><p>Dockerfile中添加一条</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RUN chmod -R 755 /usr/share/nginx/html</span><br></pre></td></tr></table></figure><p><br/></p><p>问题三：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">COPY ../certificate /etc/ssl/cert</span><br></pre></td></tr></table></figure><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">报错：failed to solve: failed to compute cache key: failed to calculate checksum of ref c6d5e059-7191-4a08-977b-26a3bf0bea5a::m4cjaiah6r518jv7y4h7rqyey: &quot;/certificate&quot;: not found</span><br></pre></td></tr></table></figure><p>如果 Dockerfile 中使用了相对路径，请确保这些文件在 Dockerfile 所在的目录或子目录下。</p>]]></content>
+        <content type="html"><![CDATA[<p>注意：别忘了开服务器防火墙的端口，不然无法访问。</p><p><br/></p><p>问题一：</p><p>直接将windows电脑上生成过的git秘钥复制黏贴到linux服务器上，使用时报以下错误</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0644 for &#x27;/root/.ssh/id_rsa&#x27; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">git@github.com: Permission denied (publickey).</span><br></pre></td></tr></table></figure><p>原因：文件夹权限开放的太多</p><p>解决方案：chmod 600 ~/.ssh/id_rsa</p><p><br/></p><p>Hi XiaoCaoAskedForHelp! You’ve successfully authenticated, but GitHub does not provide shell access.</p><p>这个不是错，它只是想告诉你，github 不允许 shell 交互。仅此而已。</p><p><br/></p><p>问题二：</p><p>nginx部署出现文件访问权限问题</p><p>原因：主机上的文件权限比较低，所以无法访问，调整一下就行。</p><p>解决方案：</p><p>Dockerfile中添加一条</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">RUN</span><span class="language-bash"> <span class="built_in">chmod</span> -R 755 /usr/share/nginx/html</span></span><br></pre></td></tr></table></figure><p><br/></p><p>问题三：</p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">COPY</span><span class="language-bash"> ../certificate /etc/ssl/cert</span></span><br></pre></td></tr></table></figure><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">报错：failed to solve: failed to compute cache key: failed to calculate checksum of ref c6d5e059-7191-4a08-977b-26a3bf0bea5a::m4cjaiah6r518jv7y4h7rqyey: &quot;/certificate&quot;: not found</span><br></pre></td></tr></table></figure><p>如果 Dockerfile 中使用了相对路径，请确保这些文件在 Dockerfile 所在的目录或子目录下。</p>]]></content>
       
       
       <categories>
