@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>fusion360笔记</title>
+      <link href="/2023/07/19/fusion360%E7%AC%94%E8%AE%B0/"/>
+      <url>/2023/07/19/fusion360%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="用户参数"><a href="#用户参数" class="headerlink" title="用户参数"></a>用户参数</h2><p>用户参数就和编程中的变量一样，在修改-更改参数-新增用户参数 就能添加参数了。</p><p>在应用中可以直接打出参数定义的名字就能使用，也可以使用各种计算来灵活使用。</p><p>建模过程中，最好都能实现约束，通过长度、角度等限制将图形约束起来，并且配合用户参数来画图，将来若是参数有变化，修改用户参数，图形就能随着变化。</p><h2 id="构造平面"><a href="#构造平面" class="headerlink" title="构造平面"></a>构造平面</h2><p>构造中可以通过很多方式构造平面，如偏移平面，中间平面等。可以用来配合其他操作。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 3D建模 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 3D建模 </tag>
+            
+            <tag> Fusion360 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>车标科普</title>
       <link href="/2023/07/16/%E8%BD%A6%E6%A0%87%E7%A7%91%E6%99%AE/"/>
       <url>/2023/07/16/%E8%BD%A6%E6%A0%87%E7%A7%91%E6%99%AE/</url>
